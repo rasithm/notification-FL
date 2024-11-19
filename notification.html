@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="notification.css">
+    <script defer src="notification.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="menu">
+                    <li class="logo">
+                        <!-- change the name of logo according to your name of image (mani/vengu) -->
+                        <a href="#"><img src="p2.png" alt="Placeme Logo" style="height: 30px;"></a>
+                    </li>
+                    <div class="item">
+                        
+                    
+                        <li ><a href="{% url 'job_seeker:home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+                    </div>
+                    <div class="item">
+                        
+                    
+                        <li><a href="{% url 'job_seeker:job' %}"><i class="fa-solid fa-briefcase"></i>Jobs</a></li>
+                    </div>
+                    <div class="item" id="item">
+                        <li><a ><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                    </div>
+                    
+                    <li class="item button"><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-user"></i> 
+                      Profile</a></li>
+                    <li class="toggle" id="menu-toggle"><span class="bars"></span></li>
+                    <li class="item button"><a href="{% url 'auth:login' %}">Log In</a></li>
+                    <li class="item">
+                        <select name="Usertypes" onchange="location = this.value;">
+                            <option value="{% url 'job_seeker:home' %}">Job Seeker</option>
+                            <option value="{% url 'recruiters:home' %}">Recruiter</option>
+                            <option value="{% url 'administrator:dashboard' %}">Administrator</option>
+                            <option value="{% url 'refer_and_earn:home' %}">Refer and earn</option>
+                        </select> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Notification-->
+
+
+    <div class="scroll-bg" id="scroll-bg">
+        <div class="scroll-div">
+
+
+            <div class="scroll-object">
+                <div class="name">
+                    <h2>Recommend jobs</h2>
+                    <p>coustumer care suppot</p>
+                </div>
+                <div class="new">
+                    <p>New</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
