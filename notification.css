@@ -12,7 +12,8 @@
    
    
    top: 65px;
-   background-color: blue;
+   /*background-color: blue;*/
+   background-color: rgb(7, 150, 175);
    width: 400px;
    display: none;
    flex-direction: row;
@@ -22,10 +23,11 @@
    padding-top: 10px;
    padding-bottom: 10px;
    padding-left: 20px;
+   z-index: 5;
 }
 .scroll-div{
     width: 400px;
-    background-color: rgb(57, 182, 53);
+    /*background-color: rgb(57, 182, 53);*/
     height: 400px;
     overflow: hidden;
    
@@ -35,10 +37,10 @@
     overflow-y: scroll;
 }
 .scroll-object{
-    color: azure;
+    
     font-size: 15px;
     height: auto;
-    background-color: burlywood;
+    /*background-color: burlywood;*/
     padding-bottom: 10px;
     border-bottom: 2px solid gray;
     display: flex;
@@ -50,14 +52,35 @@
 .new{
     width: 30%;
     align-items: center;
-    background-color: brown;
+    /*background-color: brown;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .new p{
     padding: 1px 13px;
-    border: 2px solid rgb(207, 179, 179);
+    border: 2px solid #141b5f;
     border-radius: 25px;
+    color: rgb(238, 18, 18);
     
+}
+
+
+#item:hover .scroll-bg{
+    display: flex;
+}
+
+
+/* style for scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+   background: linear-gradient(to right, #9DAAF2, #141b5f, #141b5f, #141b5f, #141b5f, #141b5f, #9DAAF2);
+   border-radius: 4px;
+   
 }
