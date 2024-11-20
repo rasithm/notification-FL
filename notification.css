@@ -6,23 +6,25 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background-color: #9DAAF2;
+}
 .scroll-bg{
    position: relative;
    
    
    top: 65px;
    /*background-color: blue;*/
-   background-color: rgb(7, 150, 175);
+   background-color: rgb(255, 255, 255);
    width: 400px;
    display: none;
    flex-direction: row;
    left: 800px;
    
    border-radius: 15px;
-   padding-top: 10px;
+   
    padding-bottom: 10px;
-   padding-left: 20px;
+   
    z-index: 5;
 }
 .scroll-div{
@@ -30,6 +32,7 @@
     /*background-color: rgb(57, 182, 53);*/
     height: 400px;
     overflow: hidden;
+   
    
 
 }
@@ -45,9 +48,25 @@
     border-bottom: 2px solid gray;
     display: flex;
     flex-direction: row;
+    padding-left: 10px;
 }
+.scroll-object-1{
+    font-size: 15px;
+    height: auto;
+    /*background-color: burlywood;*/
+    padding-bottom: 10px;
+    border-left-color: white;
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
 .name{
     width: 70%;
+}
+.name h2{
+    font-size: 19px;
 }
 .new{
     width: 30%;
@@ -84,4 +103,13 @@
    background: linear-gradient(to right, #9DAAF2, #141b5f, #141b5f, #141b5f, #141b5f, #141b5f, #9DAAF2);
    border-radius: 4px;
    
+}
+.scroll-object-1:hover{
+    background-color: #f4f5ff;
+    border-top-left-radius: 15px;
+    
+}
+.scroll-object:hover{
+    background-color: #f4f5ff;
+    z-index: 1;
 }
