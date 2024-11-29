@@ -49,6 +49,9 @@ body{
     display: flex;
     flex-direction: row;
     padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
 .scroll-object-1{
     font-size: 15px;
@@ -60,13 +63,16 @@ body{
     display: flex;
     flex-direction: row;
     padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
 
 .name{
     width: 70%;
 }
 .name h2{
-    font-size: 19px;
+    font-size: 18px;
 }
 .new{
     width: 30%;
@@ -81,6 +87,7 @@ body{
     border: 2px solid #141b5f;
     border-radius: 25px;
     color: rgb(238, 18, 18);
+    font-size: 14px;
     
 }
 
